@@ -29,6 +29,9 @@ header{
     text-align: center;
     
 }
+.hide-hamberger{
+    display: none;
+}
 .logo{
     font-size: 40px;
     font-weight: 700;
@@ -86,6 +89,20 @@ ul li a{
     top: -130px;
     position: relative;
 }
+.new-logo{
+    color: #1A0B2E;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    background-color: #00FF88;
+    display: inline;
+    border-radius: 50px;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    position: relative;
+    top: -290px;
+    right: -370px;
+
+}
 .hero-img{
     display: flex;
     align-items: center;
@@ -114,6 +131,8 @@ ul li a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+
 
 }
 .hero-spotify, .hero-message{
@@ -131,12 +150,42 @@ ul li a{
     #fb09b4,
     #9100f8);
     color: white;
+    font-size: 16px;
+    font-weight: 600;
 }
-.hero-message{
-    color: #00FF88;
-    background-color: transparent;
-    border: 1px solid #00FF88;
+/* massage animation */
+
+.message-btn {
+  background: transparent;
+  color: #00ff9c;
+  border: 2px solid #00ff9c;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
 }
+
+.message-btn:hover {
+  box-shadow: 0 0 15px #00ff9c, 0 0 30px rgba(0,255,156,0.6);
+  transform: scale(1.06);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0,255,156,0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(0,255,156,0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0,255,156,0);
+  }
+}
+
 .hero-title{
     font-size: 60px;
     font-weight: 700;
@@ -196,6 +245,8 @@ ul li a{
     justify-content: space-between;
     color: #FFFFFF;
     margin-bottom: 100px;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 .podcast .monthly{
     display: flex;
@@ -363,6 +414,7 @@ ul li a{
 .host-content{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 40px;
     gap: 24px;
     background: rgba(53, 17, 101, 0.4);
@@ -376,6 +428,7 @@ ul li a{
     color: white;
     font-size: 32px;
     margin-bottom: 16px;
+    margin-top: 10px;
 }
 .host-container p{
     color: white;
@@ -394,7 +447,7 @@ ul li a{
 }
 .container-icon{
     display: flex;
-    justify-content:  flex-start;
+    justify-content:  center;
     flex-direction: column;
 
 }
@@ -402,5 +455,70 @@ ul li a{
     border: 1px solid rgba(83, 60, 114, 1);
     padding: 12px;
     border-radius: 50%;
+    overflow: visible;
+    
 }
 /* footer */
+.fotter{
+    background: url(./assets/footer-bg.png);
+    width: 100%;
+    max-height: 472px;
+    color: white;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fotter-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+
+}
+.fotter-title h1{
+    font-size: 70px;
+    margin-top: 120px;
+
+    
+}
+.fotter-title span{
+    background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
+    background-clip: text;
+    color: transparent;
+}
+.footer-content{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.fotter-contain{
+    display: flex;
+    gap: 40px;
+
+}
+.fotter-icon p, .fotter-copyright{
+    opacity: 0.6;
+}
+.fotter-copyright{
+    margin-bottom: 120px;
+}
+
+/* media screen */
+@media screen and (max-width: 576px) {
+    .navber{
+        .nav-links, .btn-subcribe{
+            display: none;
+        }
+        .hide-hamberger{
+            display: block;
+        }
+        
+    }
+    
+}
