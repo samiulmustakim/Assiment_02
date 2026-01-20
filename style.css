@@ -390,6 +390,7 @@ ul li a{
 .play-btn {
   position: relative;
   left: 50%;
+  top: -110px;
   transform: translate(-50%, -50%);
   background: linear-gradient(45deg, #ff2fd3, #6f5cff);
   width: 80px;
@@ -463,10 +464,11 @@ ul li a{
 .fotter{
     background: url(./assets/footer-bg.png);
     width: 100%;
-    max-height: 472px;
+    max-height: 480px;
     color: white;
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -509,6 +511,9 @@ ul li a{
 .fotter-copyright{
     margin-bottom: 120px;
 }
+
+
+
 
 /* media screen */
 @media screen and (max-width: 576px) {
@@ -561,8 +566,16 @@ ul li a{
         flex-direction: column;
         text-align: center;
     }
-    .fotter-icon{
-        
+    .fotter-contain{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 100px;
     }
-   
+    .fotter-title h1{
+        margin-top: 40px;
+    }
+    .fotter-copyright{
+        margin-bottom: 40px;
+    }
+    
 }
