@@ -288,6 +288,7 @@ ul li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    line-height: 24px;
 }
 .teachwave h1{
     text-align: center;
@@ -332,7 +333,7 @@ ul li a{
     display: grid;
     grid-template-columns: repeat(3, 380px);
     gap: 30px;
-    width: max-content;   /* ⭐ magic line */
+    width: max-content; 
     margin: 0 auto;
 }
 
@@ -410,6 +411,8 @@ ul li a{
     margin-bottom: 80px;
     margin-top: 120px;
     text-align: center;
+    font-size: 52px;
+    font-style: bold;
 }
 .host-content{
     display: flex;
@@ -421,8 +424,6 @@ ul li a{
     max-width: 1200px;
     margin: 0px auto;
     border-radius: 48px;
-
-
 }
 .host-container h4{
     color: white;
@@ -469,7 +470,7 @@ ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 .fotter-icon{
     display: flex;
@@ -518,7 +519,50 @@ ul li a{
         .hide-hamberger{
             display: block;
         }
+    }
+    .techwave-container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 30px;
+        padding: 20px;
+    }
+    .big-layout{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .small-layout{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .more-small-layout{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .feature-content{
+        display: grid;
+        grid-template-columns: repeat(1, 380px);
+        gap: 30px;
+        width: max-content;
+    }
+    .host-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
         
     }
-    
+    .container-icon, .host-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .fotter-icon{
+        
+    }
+   
 }
